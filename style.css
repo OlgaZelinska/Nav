@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;     
+}
+ @font-face {
+    font-family: 'GothamPro-Black';
+    src: url('GothamPro-Black.otf');
+    font-weight: normal;
+    font-style: normal;
+}  
+ul li {
+    list-style-type: none; 
+   }
+a {
+    text-decoration: none;
+    color: #404040;
+}   
+.сonteiner {
+    width: 1920px;
+    height: 1080px; 
+    display: flex;
+} 
+.logo{
+    margin-top: 65px;
+    margin-left: 65px;
+}
+.nav {
+    color: #404040;
+    width: 25%;
+    font-size: 1.2em;
+    font-family: 'GothamPro-Black';      
+    position: relative;
+}
+.nav-first{
+    margin-top: 115px;
+    margin-left: 48px;
+    line-height: 28px;
+}
+.sub-menu {
+    margin: 8px 15px 47px 24px;
+}
+.sub-menu li{        
+    display: inline-block;
+    margin-top: 20px;     
+}
+.circle{    
+    background: #404040;
+    display: inline-block;    
+    margin: 10px 20px;    
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+}
+.square {    
+    background: #404040;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 20px;  
+    line-height: 40px;
+    width: 13px;
+    height: 13px;
+   
+}
+.triangle {     
+    display: inline-block;
+    border: 7px solid transparent;
+    border-bottom: 13px solid #404040;
+    margin: 10px 20px;  
+}
+.nav-second{
+    border-left: 2px solid #404040; 
+    height: 97px;    
+    margin-left: 48px;
+    margin-top: 60px;
+}
+
+.nav-second span{        
+    display: inline-block;
+    border: 1px solid #404040;
+    border-radius: 20px;
+    margin-right: 15px;
+    width: 12px;
+    height: 12px; 
+}
+.nav-second li{ 
+    margin: 15px 18px 15px 18px;
+}  
+.input-search{
+    margin-top: 80px;
+    margin-left: 48px;
+    position: absolute;
+    top: 800px;
+}
+.wrapper {
+    background-image: url(icon/background.png); 
+    width: 75%;  
+    background-repeat: no-repeat;
+    display: flex;
+    font-size: 1em;
+}
+.wrapper:after {
+    position: absolute;
+    content: "КОММУНИКАЦИИ";
+    color: #ffffff;
+    opacity: 0.3;
+    font-size: 140px;   
+    top: 120px;        
+    left: 50%;
+    margin-left: -400px;
+    text-align:center;
+    letter-spacing: 8px;
+}
+.item-menu{
+    color: #ffffff;
+    padding: 40px;
+    border-left: 1px solid #ffffff; 
+}
+.item-menu-line {
+    border-left: 2px solid #ffffff; 
+    height: 82px;       
+    margin-top: 210px;
+}
+.item-menu-line span{
+    margin: 0px 15px;
+    font-size: 20px;  
+    position: relative;
+    top:-15px; 
+}
+.item-menu-line h2 {
+    font-size: 37px;
+    display: inline-block;
+    margin: 0px;
+
+}
+.item-menu-line p {
+    margin-left: 55px;
+    font-size: 20x;
+    line-height: 1.5em;
+    
+    float: right;
+}
+.item-menu ul{
+    margin-left: 115px;
+    margin-top: 52px;
+}
+.item-menu ul li{
+    padding: 12px;
+}
+.icon-close{
+    padding: 2px;
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    top: 64px;
+    color: #ffffff;
+}
+.icon-close span {
+    margin-right: 30px;
+ 
+}
+

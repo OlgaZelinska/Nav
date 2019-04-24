@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <title>Nav</title>
+   <link rel="stylesheet" href="fonts/styles.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+   <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+   <div id="root"> </div>
+   <script type="text/babel">
+      class Navigation extends React.Component{
+         render() {
+            return (    
+               <div className="nav">
+                  <h1 className="logo"><a href="#"><img src="icon/Logo.png" alt="Logo" /></a></h1>
+                  <nav className="nav-first">
+                     <ul>
+                        <li><a href="#"><b>Решения</b> в сфере DS</a>
+                           <ul className="sub-menu">
+                              <span className="circle"></span><li><a href="#"><b>Интерактивная</b><br/>коммуникация</a></li><br/>
+                              <span className="square"></span><li><a href="#"><b>Визуальная</b><br/>коммуникация</a></li><br/>
+                              <span className="triangle"></span><li><a href="#"><b>Корпоративная</b><br/>коммуникация</a></li><br/>
+                           </ul>
+                        </li>
+                        <li>О нас</li>
+                        <li>Новости</li>
+                        <li>Контакты</li>
+                     </ul>
+                  </nav>
+                  <nav className="nav-second">
+                     <ul>
+                        <li><span className="circle-second"></span><a href="#Russion"><b>Русский</b></a></li>
+                        <li><span className="circle-second"></span><a href="#Ukraine">Українский</a></li>
+                        <li><span className="circle-second"></span><a href="#English">English</a></li>
+                     </ul>
+                  </nav>
+                  <div className="input-search">
+                     <img src="icon/search.png" alt=""className="search" />
+                  </div>            
+               </div>
+            );
+         }};
+      class Wrapper extends React.Component{
+         render() {
+            return (    
+               <div className="wrapper">
+                  <div className="item-menu">
+                     <div className="item-menu-line">     
+                        <span>01</span>                   
+                        <h2>Интерактивные</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex officiis aut perspiciatis odit? Provident, non expedita, maxime eius voluptate harum.</p>
+                     </div>
+                     <ul>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                     </ul>
+                  </div>
+                  <div className="item-menu">
+                     <div className="item-menu-line">
+                        <span>02</span>
+                        <h2>Визуальные</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex officiis aut perspiciatis odit? Provident, non expedita, maxime eius voluptate harum.</p>
+                     </div>
+                     <ul>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                     </ul>
+                  </div>
+                  <div className="item-menu">
+                     <div className="item-menu-line"> 
+                        <span>03</span>                   
+                        <h2>Корпоративные</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex officiis aut perspiciatis odit? Provident, non expedita, maxime eius voluptate harum.</p>
+                     </div>
+                     <ul>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                        <li>Lorem ipsum</li>
+                     </ul>
+                  </div> 
+                  <div className="icon-close"><span>Закрыть</span><img src="icon/close.png" alt=""className="close" /></div>   
+               </div>         
+            );
+         }};
+      ReactDOM.render( 
+         <div className="сonteiner">    
+            <Navigation />
+            <Wrapper />
+         </div>,            
+         document.getElementById('root')
+      );
+   </script>
+</body>
+</html>
